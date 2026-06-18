@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Rundown</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- PIN PAGE -->
+
+<div id="pinPage">
+
+<div class="pin-box">
+
+<h1>🤎</h1>
+
+<h2>Enter Secret PIN</h2>
+
+<p>Masukkan PIN untuk membuka rundown</p>
+
+<input type="password" id="pinInput" placeholder="••••">
+
+<br><br>
+
+<button onclick="checkPin()">Open</button>
+
+<p id="error"></p>
+
+</div>
+
+</div>
+
+
+<!-- SPARKLES -->
+
+<div class="sparkles">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+
+
+<!-- RUNDOWN -->
+
+<div class="container" id="opening" style="display:none;">
+
+
+<!-- LOGO -->
+
+<div class="logo">
+
+<div class="circle">
+
+<h1>B</h1>
+
+</div>
+
+<p>HAPPY BIRTHDAY MY LOVE</p>
+
+</div>
+
+
+
+<!-- POLAROID -->
+
+<div class="polaroid">
+
+<img src="pacar.jpeg">
+
+<p>foto my love♡</p>
+
+</div>
+
+
+
+<!-- TITLE -->
+
+<div class="title">
+
+<h2>RUNDOWN</h2>
+
+<h1>Birthday</h1>
+
+<div class="boy">
+
+FOR MY BOY
+
+</div>
+
+</div>
+
+
+
+<!-- NOTE -->
+
+<div class="note">
+
+it's your day but you
+
+make everyday
+
+better ♡
+
+</div>
+
+
+
+<div class="timeline">
+
+<!-- JATILUHUR -->
+
+<div class="item">
+
+<div class="time">07.15</div>
+
+<div class="dot">📍</div>
+
+<div class="card">
+
+<h2>JATILUHUR</h2>
+
+<p>
+
+menikmati suasana pagi
+
+dan quality time bersama
+
+</p>
+
+<img src="jatiluhur.png" class="place">
+
+</div>
+
+</div>
+
+
+
+
+<!-- OUTFIT -->
+
+<div class="item">
+
+<div class="time">OUTFIT</div>
+
+<div class="dot">👕</div>
+
+<div class="card outfit">
+
+<h2>MEMAKAI OUTFIT YANG SUDAH DI TENTUKAN ♡</h2>
+
+<div class="fashion">
+
+<div>
+
+<img src="shirt.png">
+
+<p>( BROWN ) + ( HITAM )</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- WOKEI -->
+
+<div class="item">
+
+<div class="time">10.00</div>
+
+<div class="dot">☕</div>
+
+<div class="card">
+
+<h2>WOKEI</h2>
+
+<p>
+
+ngopi santai &
+
+menikmati waktu berdua
+
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<!-- PHOTOBOOTH -->
+
+<div class="item">
+
+<div class="time">11.00</div>
+
+<div class="dot">📷</div>
+
+<div class="card">
+
+<h2>PHOTOBOOTH</h2>
+
+<p>
+
+abadikan momen manis
+
+kita hari ini
+
+</p>
+
+<img src="photobooth.png" class="photo">
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-note">
+
+thank you for being you <br>
+
+i love you so much ♡
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+function checkPin(){
+
+let pin=document.getElementById("pinInput").value;
+
+if(pin==="1202"){
+
+document.getElementById("pinPage").style.display="none";
+
+document.getElementById("opening").style.display="block";
+
+}else{
+
+document.getElementById("error").innerHTML="PIN salah 🤎";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
